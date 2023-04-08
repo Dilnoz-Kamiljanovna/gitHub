@@ -1,0 +1,128 @@
+.skills {
+  margin-block: 147px;
+
+  &-title {
+    @include titleSection;
+    text-align: center;
+  }
+
+  &-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    // place-items: center;
+    // justify-content: center;
+
+    &__item {
+      background-color: $bg-card;
+      border-radius: $br-average;
+      padding: 0 41px 44px;
+
+      &-info {
+        margin: 0 auto;
+      }
+
+      &:nth-child(1) {
+        grid-row: span 5;
+
+        & img {
+          max-width: 390px;
+          width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .skills-grid__item-info {
+          max-width: 374px;
+          width: 100%;
+        }
+
+        .item-info_text {
+          padding-block: 34px 36px;
+        }
+      }
+
+      &:nth-child(2) {
+        grid-row: span 3;
+
+        & img {
+          max-width: 293px;
+          height: 247px;
+          width: 100%;
+          display: block;
+          margin-left: auto;
+        }
+
+        .skills-grid__item-info {
+          max-width: 340px;
+          width: 100%;
+        }
+
+        .item-info_text {
+          padding-bottom: 33px;
+        }
+      }
+      &:nth-child(3) {
+        grid-row: span 3;
+
+        & img {
+          max-width: 371px;
+          width: 100%;
+          display: block;
+          margin-right: auto;
+        }
+
+        .skills-grid__item-info {
+          max-width: 360px;
+          width: 100%;
+        }
+
+        .item-info_text {
+          padding-bottom: 35px;
+        }
+      }
+      &:nth-child(4) {
+        grid-row: span 2;
+        grid-column: span 2;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        & img {
+          max-width: 382px;
+          width: 100%;
+          border: 5px solid red;
+        }
+
+        .skills-grid__item-info {
+          max-width: 350px;
+          width: 100%;
+          border: 5px solid red;
+
+        }
+
+        .item-info_text {
+          max-width: 330px;
+          width: 100%;
+          padding-bottom: 31px;
+        }
+      }
+    }
+  }
+}
+
+.item-info_title {
+  font-family: "Poppins-SemiBold";
+  text-transform: capitalize;
+  font-size: 30px;
+  line-height: 80px;
+  color: $dark;
+}
+
+.item-info_btn {
+  @include sectionBtn;
+}
+.item-info_btn:hover {
+  @include hoverBtn;
+}

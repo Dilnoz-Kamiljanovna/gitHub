@@ -1,0 +1,57 @@
+.wrapper {
+  @include flexBetween;
+  margin-bottom: 261px;
+
+  &-contact {
+    & img {
+      max-width: 477px;
+      width: 100%;
+    }
+
+    &__title {
+      @include titleSection;
+    }
+
+    &__text {
+      max-width: 776px;
+      width: 100%;
+      padding-block: 37px 52px;
+      @include textSection;
+    }
+
+    &__form {
+      max-width: 726px;
+      width: 100%;
+      @include flexCenter;
+      gap: 12px;
+      & input {
+        max-width: 450px;
+        width: 100%;
+        height: 80px;
+        border: 1px solid $lightGray;
+        border-radius: $br-average;
+        @include textCard;
+        padding-inline: 33px;
+      }
+      & button {
+        max-width: 264px;
+        width: 100%;
+        height: 80px;
+        background: $dark;
+        border-radius: $br-average;
+        border: 2px solid $dark;
+        font-family: "Poppins-Medium";
+        font-size: 20px;
+        line-height: 30px;
+        color: $white;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background: $white;
+          color: $dark;
+        }
+      }
+    }
+  }
+}

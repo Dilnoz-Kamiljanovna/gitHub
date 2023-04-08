@@ -1,0 +1,85 @@
+.section-pricing {
+  //   text-align: center;
+  margin-block: 94px;
+
+  &__title {
+    @include titleSection;
+    text-align: center;
+  }
+
+  &__content {
+    @include flexBetween;
+  }
+}
+
+.pricing {
+  &-wrapper {
+    width: 100%;
+    height: 340px;
+    margin-bottom: 11px;
+  }
+
+  &-title {
+    width: 100%;
+    font-family: "Poppins-SemiBold";
+    font-size: 30px;
+    line-height: 48px;
+    color: $dark;
+  }
+
+  &-text {
+    width: 100%;
+    margin-block: 32px 29px;
+    @include textSection;
+  }
+
+  &-cost {
+    width: 240px;
+    height: 45px;
+    background: $bg-price;
+    border-radius: $br-average;
+    @include flexCenter;
+    gap: 8px;
+
+    & span {
+      font-family: "Poppins-Regular";
+      font-size: 30px;
+      line-height: 45px;
+      color: $dark;
+    }
+
+    & p {
+      font-family: 'Poppins-Regular';
+      font-size: 18px;
+      line-height: 27px;
+      color: $lightDark;
+    }
+  }
+}
+
+.pricing:nth-child(1) {
+  & img {
+    max-width: 311px;
+  }
+  & p {
+    max-width: 419px;
+  }
+}
+
+.pricing:nth-child(2) {
+  & img {
+    max-width: 391px;
+  }
+  & p {
+    max-width: 382px;
+  }
+}
+
+.pricing:nth-child(3) {
+  & img {
+    max-width: 340px;
+  }
+  & p {
+    max-width: 426px;
+  }
+}

@@ -1,0 +1,55 @@
+@mixin titleHeader {
+    
+}
+
+@mixin titleSection {
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+    line-height: 80px;
+    color: $black;
+    text-transform: capitalize;
+}
+
+@mixin textSection {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+    line-height: 30px;
+    color: $lightGray;
+}
+
+@mixin textCard {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: $lightGray;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sectionBtn {
+    width: 230px;
+    height: 60px;
+    border-radius: $br-less;
+    background: $dark;
+    font-family: "Poppins-Medium";
+    font-size: 18px;
+    line-height: 27px;
+    color: $white;
+    border: 2px solid $dark;
+    transition: .5s;
+    cursor: pointer;
+}
+ @mixin hoverBtn {
+    background: $white;
+    color: $dark
+ }

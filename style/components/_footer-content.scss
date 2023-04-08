@@ -1,0 +1,14 @@
+.footer-content {
+  max-width: 1338px;
+  width: 100%;
+  margin-top: 165px;
+  padding-block: 55px;
+  border-top: 1px solid $line-color;
+  @include flexBetween;
+  &__text {
+    font-family: "Poppins-Regular";
+    font-size: 24px;
+    line-height: 36px;
+    color: $lightGray;
+  }
+}
